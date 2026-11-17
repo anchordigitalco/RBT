@@ -1675,7 +1675,8 @@ html.tree-fallback .tree-stage__fallback { opacity: 1; }
   padding: clamp(24px, 3vw, 40px);
   border-radius: var(--radius-card);
   background: var(--paper);
-  box-shadow: var(--shadow-card);
+  /* an even shadow on every side so the top edge reads against the pale band, plus the usual drop */
+  box-shadow: 0 0 30px -4px rgba(31, 34, 37, 0.2), var(--shadow-card);
 }
 .closing__brand img { width: 100%; max-width: 300px; height: auto; }
 
